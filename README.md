@@ -40,7 +40,7 @@ java Task-Manager
 
 ## Roadmap
 
-![System diagram](docs/Eisenhower%20Matrix.pdf)
+![Eisenhower Matrix](docs/Eisenhower%20Matrix.pdf)
 
 - [ ] junit testing
 - [ ] multiple accounts and lists
