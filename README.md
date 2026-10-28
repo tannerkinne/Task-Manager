@@ -12,7 +12,7 @@ The software manages a list of the users tasks. Users can add, delete, and list 
 When adding, the list will automatically place the tasks in the correct location based on due date
 When the user is done, the list is saved to a csv file so that it can be resumed later.
 
-![System diagram](docs/FLowChart.pdf)
+![System diagram](docs/System%20Diagram.pdf)
 
 ## Tech Stack
 
