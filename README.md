@@ -30,7 +30,17 @@ cd Task-Manager
 java Task-Manager
 ```
 
+## Build Plan
+
+- Set up github repo and connect to IDE.
+- Create task class, tracking properties like name, due date, notes, etc.
+- Create a list class, which creates an arraylist of tasks and allows adding at end, deletion of an item, and printing of list
+- Edit addition function to add items at the proper sorted location in the list(based on due date) instead of adding at end
+- Add function to save the list to a csv file when the user is done, and read the csv file to create an initial list when the user begins
+
 ## Roadmap
+
+![System diagram](docs/Eisenhower%20Matrix.pdf)
 
 - [ ] junit testing
 - [ ] multiple accounts and lists
