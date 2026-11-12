@@ -24,4 +24,19 @@ class Task {
     public String getNotes() {
         return notes;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof Task t) {
+            if (t.name.equals(name)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public String toString() {
+        return name + " | " + dateTime + " | " + notes;
+    }
 }
