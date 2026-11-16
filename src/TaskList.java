@@ -6,6 +6,12 @@ class TaskList {
     }
 
     public void add(Task t) {
+        for (int i = 0; i < tasks.size(); i++) {
+            if (t.compareTo(tasks.get(i)) < 0) {
+                tasks.add(i, t);
+                return;
+            }
+        }
         tasks.add(t);
     }
 
