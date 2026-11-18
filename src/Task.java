@@ -45,6 +45,6 @@ class Task {
 
     @Override
     public String toString() {
-        return name + " | " + dateTime + " | " + notes;
+        return name + "," + dateTime + "," + notes;
     }
 }
