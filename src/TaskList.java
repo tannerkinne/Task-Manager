@@ -1,7 +1,8 @@
 import java.util.ArrayList;
+import java.time.LocalDate;
 import java.io.*;
-class TaskList {
-    private ArrayList<Task> tasks;
+public class TaskList {
+    public ArrayList<Task> tasks;
     public TaskList() {
         tasks = new ArrayList<>();
 
