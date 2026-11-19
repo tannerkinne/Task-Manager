@@ -1,6 +1,6 @@
 //decided to use LocalDate, will allow me to use date data easily
-import java.time.LocalDate
-class Task {
+import java.time.LocalDate;
+public class Task {
     private String name;
     private LocalDate dateTime;
     private String notes;
@@ -35,7 +35,7 @@ class Task {
         return false;
     }
 
-    @Override
+
     public int compareTo(Object o) {
         if (o instanceof Task t) {
             return dateTime.compareTo(t.dateTime);
