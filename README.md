@@ -8,27 +8,71 @@ There are many assignments for different classes posted in different places. I w
 
 ## How It Works
 
-The software manages a list of the users tasks. Users can add, delete, and list them.
-When adding, the list will automatically place the tasks in the correct location based on due date
-When the user is done, the list is saved to a csv file so that it can be resumed later.
+The application uses an ArrayList to store tasks. Each task contains a name, due date, and notes.
 
+Users can:
+- Add new tasks.
+- Delete existing tasks.
+- View their current tasks.
+- Automatically organize tasks by due date.
+- Save their task list to a CSV file when exiting.
+- Load previously saved tasks when restarting the application.
+
+### System Architecture
 ![System diagram](docs/System%20Diagram.pdf)
 
 ## Tech Stack
 
 - **Language:** Java
-- **Libraries:** ArrayList, IO, and LocalDate
-- **External tools:** csv file
-
+- **Libraries:** ArrayList, Java I/O, LocalDate
+- **Data Storage:** CSV file (`list.csv`)
+- **Development Tools:** IntelliJ IDEA, Git, GitHub
 ## Setup
 
-Run the project and follow the onscreen instructions.
+### Prerequisites
+
+- Java JDK 8 or newer
+- Git
+- Terminal or command prompt
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
-git https://github.com/tannerkinne/Task-Manager.git
+git clone https://github.com/tannerkinne/Task-Manager.git
 cd Task-Manager
-java Task-Manager
 ```
+
+2. Compile the Java files:
+
+```bash
+mkdir -p out
+javac -d out $(find src -name "*.java")
+```
+
+3. Run the application:
+
+```bash
+java -cp out Task_Manager
+```
+
+### Example Usage
+
+The following is an example of the application's intended workflow:
+
+**Input:**
+- Add a task named "Calculus Homework"
+- Due date: 2026-12-01
+- Notes: "Complete problems 1-20"
+
+**Expected result:**
+- Task is added successfully.
+- Task appears in the list, sorted by due date.
+- Task is saved to `list.csv` upon exiting.
+- Task is restored when the application is launched again.
+
+**![Example](docs/TaskManager_Example.pdf)**
 
 ## Build Plan
 
@@ -42,9 +86,22 @@ java Task-Manager
 
 ![Eisenhower Matrix](docs/Eisenhower%20Matrix.pdf)
 
-- [ ] junit testing
-- [ ] multiple accounts and lists
-- [ ] custom list sorting
+### Completed
+
+- [x] Set up GitHub repository and connect it to IDE.
+- [x] Create Task class with name, due date, and notes.
+- [x] Create TaskList class using ArrayList.
+- [x] Implement task addition and deletion.
+- [x] Implement task listing.
+- [x] Automatically sort tasks by due date.
+- [x] Implement CSV file saving and loading.
+- [x] Implement JUnit testing.
+
+### Future Improvements
+
+
+- [ ] Support multiple accounts and task lists.
+- [ ] Allow custom task sorting.
 
 ## Author
 

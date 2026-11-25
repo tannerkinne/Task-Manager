@@ -41,10 +41,10 @@ public class TaskList {
     }
 
     public void print() {
-        IO.println("Task List");
-        IO.println("Name,Due Date,Notes");
+        System.out.println("Task List");
+        System.out.println("Name,Due Date,Notes");
         for (Task t : tasks) {
-            IO.println(t.toString());
+            System.out.println(t.toString());
         }
     }
 
