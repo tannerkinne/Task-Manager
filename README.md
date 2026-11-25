@@ -103,6 +103,10 @@ The following is an example of the application's intended workflow:
 - [ ] Support multiple accounts and task lists.
 - [ ] Allow custom task sorting.
 
+## Demo
+
+[Watch the video walkthrough](docs/Walkthrough.mov)
+
 ## Author
 
 Tanner Kinne
