@@ -26,9 +26,9 @@ public class Task {
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) { // Overrides what it means for Task objects to be equal
         if (o instanceof Task t) {
-            if (t.name.equals(name) && t.dateTime.equals(dateTime)) {
+            if (t.name.equals(name) && t.dateTime.equals(dateTime)) {  // Based on name and due date
                 return true;
             }
         }
@@ -38,7 +38,7 @@ public class Task {
 
     public int compareTo(Object o) {
         if (o instanceof Task t) {
-            return dateTime.compareTo(t.dateTime);
+            return dateTime.compareTo(t.dateTime);  // Compares based on Due Date, useful in TaskList.java add function
         }
         throw new IllegalArgumentException();
     }
